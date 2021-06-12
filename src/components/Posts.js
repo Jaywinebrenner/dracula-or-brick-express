@@ -42,6 +42,7 @@ class Posts extends Component {
                                 <div>
                                     <small>{post.dateString}</small>
                                     <h3 style={{margin: '0'}}>{post.title}</h3>
+                                    <a style={{ color: "maroon"}}href="">Read More</a>
                                     </div>
                             </div>
                         </li>

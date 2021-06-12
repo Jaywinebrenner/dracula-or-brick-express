@@ -9,4 +9,12 @@ router.get('/', (req, res) => {
   res.render('home', data) // render home.mustache
 })
 
+router.get('/post/:slug', (req, res) => {
+  const slug = req.params.slug
+  const post = {
+    slug: slug
+  }
+  res.render('post', post)
+})
+
 module.exports = router
